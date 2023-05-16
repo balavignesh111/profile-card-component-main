@@ -19,12 +19,85 @@ html{
 
 body{
   font-family: 'Kumbh Sans', sans-serif;
-  background: url('/images/bg-pattern-top.svg') no-repeat top 60% left -90%,
-  url('/images/bg-pattern-bottom.svg') no-repeat top -28% right -70%; 
+  background: no-repeat bottom -29rem right -10rem/60% url('/images/bg-pattern-bottom.svg'),no-repeat top -24rem left -10rem/60% url('/images/bg-pattern-top.svg');
   background-color: var(--Darkcyan);
   min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+/* box starts here!!! */
+.profile-box{
+  background-color: white;
+  width: 20rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.background-image{
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* profile image starts here!!! */
+.profile_image-container{
+  width: 20rem;
+}
+.victor-profile{
+  margin-top: -65%;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+/* horizontal-line */
+.horizontal-line{
+  border-top: 1px solid var(--Dark-gray);
+  width: 100%;
+}
+/* profile details */
+.username, .stats-counts{
+  color: var(--Very-dark-desaturated-blue);
+}
+.username{
+  margin-bottom: 0.5rem;
+}
+.country{
+  text-align: center;
+  color: var(--Dark-grayish-blue);
+  font-size: 0.8rem;
+}
+.age{
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+}
+/* profile status box */
+.profile-status-box{
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.profile-stats{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stats-type{
+  font-size: 0.7rem;
+  color: var(--Dark-grayish-blue);
+}
+
+/* mobile responsive */
+@media screen and (max-width:375px) {
+  body{
+    background: no-repeat top -11rem left -10rem/100% url('/images/bg-pattern-top.svg'),no-repeat bottom -11rem right -10rem/100% url('/images/bg-pattern-bottom.svg') var(--Darkcyan);
+  }
+  .profile-box{
+    width: 19rem;
+  }
 }
