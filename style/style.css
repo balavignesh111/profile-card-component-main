@@ -19,7 +19,7 @@ html{
 
 body{
   font-family: 'Kumbh Sans', sans-serif;
-  background: no-repeat bottom -29rem right -10rem/60% url('/images/bg-pattern-bottom.svg'),no-repeat top -24rem left -10rem/60% url('/images/bg-pattern-top.svg');
+  background: no-repeat bottom -29rem right -10rem/60% url('../images/bg-pattern-bottom.svg'),no-repeat top -24rem left -10rem/60% url('../images/bg-pattern-top.svg');
   background-color: var(--Darkcyan);
   min-height: 100vh;
   display: flex;
